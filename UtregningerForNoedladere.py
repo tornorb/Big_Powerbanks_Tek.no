@@ -8,6 +8,8 @@ from tkinter.filedialog import askopenfilename
 
 wattimer = list()
 prosenter = list()
+totaleWattimer = list()
+totaleProsenter = list()
 elementTeller = 0
 
 def regn_ut(mAh, volt, gittWh, teller):
@@ -37,7 +39,7 @@ def regn_gjennomsnitt(liste):
     total = 0.0
     for l in liste:
         total += float(l)
-    return total/3
+    return total/len(liste)
 
 def les_data():
     ferdigFil = open(velg_filnavn(), "w")
@@ -61,12 +63,19 @@ def les_data():
                 except Exception as e:
                     print("        ERROR", e)
             if len(linje) > 10:
-                ferdigData.append("\nSnitt: " + str("{0:.2f}".format(regn_gjennomsnitt(wattimer))) + " Wh + " + str("{0:.2f}".format(regn_gjennomsnitt(prosenter))) + "%")
+                wattimerGjennomsnitt = regn_gjennomsnitt(wattimer)
+                prosentGjennomsnitt = regn_gjennomsnitt(prosenter)
+                totaleWattimer.append(wattimerGjennomsnitt)
+                totaleProsenter.append(prosentGjennomsnitt)
+                ferdigData.append("\nSnitt: " + str("{0:.2f}".format(wattimerGjennomsnitt)) + " Wh + " + str("{0:.2f}".format(prosentGjennomsnitt)) + "%")
                 wattimer.clear()
                 prosenter.clear()
+        ferdigData.append("\n\n\n * - - - - - - - - - - - - - - - - - - - - *\n\nSnitt for alle laderne totalt: " + str("{0:.2f}".format(regn_gjennomsnitt(totaleWattimer))) + " Wh + " + str("{0:.2f}".format(regn_gjennomsnitt(totaleProsenter))) + "%")
     for f in ferdigData:
         ferdigFil.write(f)
-    print("\r\n\r\n    Fil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n    Tilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
+    print("\n\n    Jobber med dataene...")
+    time.sleep(2)
+    print("\n\n    Fil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n    Tilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
 
 def velg_filnavn():
     return str(input("\r\n    Hva oensker du at den ferdig prosesserte filen skal hete? ") + ".txt")

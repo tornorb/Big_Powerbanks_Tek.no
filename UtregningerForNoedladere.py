@@ -23,7 +23,7 @@ def regn_ut(
     wattimer.append(float(Wh))
     prosenter.append(float(prosent))
     return (
-        f"Runde {teller + 1} målt: {Wh:#.2f} Wh. Prosentandel: {prosent:#.2f}%"
+        f"Runde {teller + 1} målt: {Wh:.2f} Wh. Prosentandel: {prosent:.2f}%"
     )
 
 
@@ -75,7 +75,7 @@ def les_data(input_fil: Path) -> List[str]:
             totaleWattimer.append(watt_snitt)
             totaleProsenter.append(prosent_snitt)
             enhetsData.append(
-                f"Snitt: {watt_snitt:#.2f} Wh + {prosent_snitt:#.2f}%"
+                f"Snitt: {watt_snitt:.2f} Wh + {prosent_snitt:.2f}%"
             )
             # Alltid tøm globale lister før man kaller regn_ut() på en ny linje
             wattimer.clear()
@@ -86,7 +86,7 @@ def les_data(input_fil: Path) -> List[str]:
     totale_p_snitt = regn_gjennomsnitt(totaleProsenter)
     ferdigData.append(
         '\n\n* - - - - - - - - - - - - - - - - - - - - *\n\n'
-        f"Snitt for alle laderne totalt: {totale_w_snitt:#.2f} Wh + {totale_p_snitt:#.2f}%"
+        f"Snitt for alle laderne totalt: {totale_w_snitt:.2f} Wh + {totale_p_snitt:.2f}%"
         '\n'
     )
     return ferdigData

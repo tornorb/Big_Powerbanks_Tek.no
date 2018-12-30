@@ -17,7 +17,10 @@ def regn_ut(mAh, volt, gittWh, teller):
     prosent = (Wh * 100)/float(gittWh)
     wattimer.append(float(Wh))
     prosenter.append(float(prosent))
-    return("\nRunde " + str(teller+1) + " målt: " + str(float("{0:.2f}".format(Wh))) + " Wh. Prosentandel: " + str(float("{0:.2f}".format(prosent))) + "%")
+    return (
+        f"\nRunde {teller + 1} målt: {Wh:#.2f} Wh. "
+        f"Prosentandel: {prosent:#.2f}%"
+    )
 
 
 def fjern_stjerner(linje):
@@ -51,9 +54,8 @@ def les_data():
             ferdigData.append("\n" + fjern_stjerner(linje))
             temp = linje.split(" * ")
             if len(temp) > 1:
-                gittWh = temp[1]
-                volt = temp[2]
-                tempTekst = "Hevdet Wh: " + str(gittWh) + " Wh"
+                gittWh, volt = temp[1], temp[2]
+                tempTekst = f"Hevdet Wh: {gittWh} Wh"
                 ferdigData.append(tempTekst)
                 try:
                     temp1 = temp[3].split(" + ")
@@ -66,19 +68,34 @@ def les_data():
                 prosentGjennomsnitt = regn_gjennomsnitt(prosenter)
                 totaleWattimer.append(wattimerGjennomsnitt)
                 totaleProsenter.append(prosentGjennomsnitt)
-                ferdigData.append("\nSnitt: " + str("{0:.2f}".format(wattimerGjennomsnitt)) + " Wh + " + str("{0:.2f}".format(prosentGjennomsnitt)) + "%")
+                ferdigData.append(
+                    f"\nSnitt: {wattimerGjennomsnitt:#.2f}"
+                    f" Wh + {prosentGjennomsnitt:#.2f}%"
+                )
                 wattimer.clear()
                 prosenter.clear()
-        ferdigData.append("\n\n\n * - - - - - - - - - - - - - - - - - - - - *\n\nSnitt for alle laderne totalt: " + str("{0:.2f}".format(regn_gjennomsnitt(totaleWattimer))) + " Wh + " + str("{0:.2f}".format(regn_gjennomsnitt(totaleProsenter))) + "%")
+        totale_watt_timer_snitt = regn_gjennomsnitt(totaleWattimer)
+        totale_prosenter_snitt = regn_gjennomsnitt(totaleProsenter)
+        ferdigData.append(
+            "\n\n\n* - - - - - - - - - - - - - - - - - - - - *\n\n"
+            f"Snitt for alle laderne totalt: {totale_watt_timer_snitt:#.2f}"
+            f" Wh + {totale_prosenter_snitt:#.2f}%"
+        )
     for f in ferdigData:
         ferdigFil.write(f)
     print("\n\n\tJobber med dataene...")
     time.sleep(2)
-    print("\n\n\tFil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n\tTilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
+    print(
+        f"\n\n\tFil med prosessert data opprettet: '{ferdigFil.name}'"
+        f"\n\tTilgjengelig ved: {os.path.realpath(ferdigFil.name)}"
+    )
 
 
 def velg_filnavn():
-    return str(input("\r\n\tHva oensker du at den ferdig prosesserte filen skal hete? ") + ".txt")
+    filnavn = input(
+        "\n\tHva oensker du at den ferdig prosesserte filen skal hete? "
+    )
+    return f"{filnavn}.txt"
 
 
 def velg_fil():
@@ -93,6 +110,7 @@ def velg_fil():
     )
     root.destroy()
     return filnavn
+
 
 if __name__ == '__main__':
     les_data()

@@ -36,10 +36,8 @@ def fjern_stjerner(linje):
 
 
 def regn_gjennomsnitt(liste):
-    total = 0.0
-    for l in liste:
-        total += float(l)
-    return total/len(liste)
+    total = sum(map(float, liste))
+    return total / len(liste)
 
 
 def les_data():

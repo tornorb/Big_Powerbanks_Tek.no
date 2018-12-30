@@ -48,11 +48,9 @@ def les_data():
     ferdigData = list()
     with open(velg_fil()) as fil:
         for linje in fil:
-            t = linje.find("*", 0, )
             ferdigData.append("\n" + fjern_stjerner(linje))
             temp = linje.split(" * ")
             if len(temp) > 1:
-                produkt = temp[0]
                 gittWh = temp[1]
                 volt = temp[2]
                 tempTekst = "Hevdet Wh: " + str(gittWh) + " Wh"

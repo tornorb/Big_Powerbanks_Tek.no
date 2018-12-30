@@ -1,9 +1,6 @@
-import random
 import time
-import sys
 import os
 import tkinter
-import ntpath  # For at det skal fungere paa baade Linux, Windows og Mac
 from tkinter.filedialog import askopenfilename
 
 wattimer = list()

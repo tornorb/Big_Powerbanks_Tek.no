@@ -82,13 +82,15 @@ def velg_filnavn():
 
 
 def velg_fil():
-    filbane = os.getcwd()  #Henter naavaerende filbane
+    filbane = os.getcwd()  # Henter naavaerende filbane
     root = tkinter.Tk()  # Rot
-    root.withdraw() # Gjemmer selve Tkinter-vinduet
+    root.withdraw()     # Gjemmer selve Tkinter-vinduet
     root.update()
-    filnavn = askopenfilename(initialdir=filbane, # Lar bruker velge fil
-                              filetypes =(("Tekst", "*.txt"), ("Alle filtyper","*.*")),
-                              title = "Velg filen du vil hente data fra:")
+    filnavn = askopenfilename(
+        initialdir=filbane,     # Lar bruker velge fil
+        filetypes=(("Tekst", "*.txt"), ("Alle filtyper", "*.*")),
+        title="Velg filen du vil hente data fra:"
+    )
     root.destroy()
     return filnavn
 

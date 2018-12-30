@@ -9,12 +9,14 @@ totaleWattimer = list()
 totaleProsenter = list()
 elementTeller = 0
 
+
 def regn_ut(mAh, volt, gittWh, teller):
     Wh = (float(mAh) * float(volt))/1000
     prosent = (Wh * 100)/float(gittWh)
     wattimer.append(float(Wh))
     prosenter.append(float(prosent))
     return("\nRunde " + str(teller+1) + " målt: " + str(float("{0:.2f}".format(Wh))) + " Wh. Prosentandel: " + str(float("{0:.2f}".format(prosent))) + "%")
+
 
 def fjern_stjerner(linje):
     nyLinje = ""
@@ -28,15 +30,17 @@ def fjern_stjerner(linje):
             stjerneTeller += 1
         elif tegn == "*" and stjerneTeller > 0:
             stjerneTeller += 1
-        if fjern != True:
+        if fjern is not True:
             nyLinje += tegn
     return nyLinje
+
 
 def regn_gjennomsnitt(liste):
     total = 0.0
     for l in liste:
         total += float(l)
     return total/len(liste)
+
 
 def les_data():
     ferdigFil = open(velg_filnavn(), "w")
@@ -74,8 +78,10 @@ def les_data():
     time.sleep(2)
     print("\n\n    Fil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n    Tilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
 
+
 def velg_filnavn():
     return str(input("\r\n    Hva oensker du at den ferdig prosesserte filen skal hete? ") + ".txt")
+
 
 def velg_fil():
     filbane = os.getcwd()  #Henter naavaerende filbane
@@ -88,4 +94,5 @@ def velg_fil():
     root.destroy()
     return filnavn
 
-les_data()
+if __name__ == '__main__':
+    les_data()

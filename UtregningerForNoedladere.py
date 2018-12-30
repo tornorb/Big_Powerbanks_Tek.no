@@ -44,7 +44,7 @@ def regn_gjennomsnitt(liste):
 
 def les_data():
     ferdigFil = open(velg_filnavn(), "w")
-    print("    >> Velg kildefil i filvelgervinduet\r\n")
+    print("\t>> Velg kildefil i filvelgervinduet\r\n")
     ferdigData = list()
     with open(velg_fil()) as fil:
         for linje in fil:
@@ -62,7 +62,7 @@ def les_data():
                     for i, tall in enumerate(temp1):
                         ferdigData.append(regn_ut(tall, volt, gittWh, i))
                 except Exception as e:
-                    print("        ERROR", e)
+                    print("\t\tERROR", e)
             if len(linje) > 10:
                 wattimerGjennomsnitt = regn_gjennomsnitt(wattimer)
                 prosentGjennomsnitt = regn_gjennomsnitt(prosenter)
@@ -74,13 +74,13 @@ def les_data():
         ferdigData.append("\n\n\n * - - - - - - - - - - - - - - - - - - - - *\n\nSnitt for alle laderne totalt: " + str("{0:.2f}".format(regn_gjennomsnitt(totaleWattimer))) + " Wh + " + str("{0:.2f}".format(regn_gjennomsnitt(totaleProsenter))) + "%")
     for f in ferdigData:
         ferdigFil.write(f)
-    print("\n\n    Jobber med dataene...")
+    print("\n\n\tJobber med dataene...")
     time.sleep(2)
-    print("\n\n    Fil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n    Tilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
+    print("\n\n\tFil med prosessert data opprettet: '" + ferdigFil.name + "'\r\n\tTilgjengelig ved:", os.path.realpath(ferdigFil.name),"\r\n")
 
 
 def velg_filnavn():
-    return str(input("\r\n    Hva oensker du at den ferdig prosesserte filen skal hete? ") + ".txt")
+    return str(input("\r\n\tHva oensker du at den ferdig prosesserte filen skal hete? ") + ".txt")
 
 
 def velg_fil():

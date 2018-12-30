@@ -23,8 +23,7 @@ def regn_ut(
     wattimer.append(float(Wh))
     prosenter.append(float(prosent))
     return (
-        f"Runde {teller + 1} målt: {Wh:#.2f} Wh. "
-        f"Prosentandel: {prosent:#.2f}%"
+        f"Runde {teller + 1} målt: {Wh:#.2f} Wh. Prosentandel: {prosent:#.2f}%"
     )
 
 
@@ -58,7 +57,7 @@ def les_data(input_fil: Path) -> List[str]:
             # Hopp over tomme linjer...
             continue
         enhetsData = [f"\n{fjern_stjerner(linje)}"]
-        verdier = linje.split(" * ")
+        verdier = linje.split(' * ')
         if len(verdier) > 1:
             gittWh, volt = verdier[1], verdier[2]
             enhetsData.append(f"Hevdet Wh: {gittWh} Wh")
@@ -69,34 +68,33 @@ def les_data(input_fil: Path) -> List[str]:
                 for i, tall in enumerate(verdier[3].split(" + ")):
                     enhetsData.append(regn_ut(tall, volt, gittWh, i))
             except Exception as e:
-                print("\t\tERROR", e)
+                print('\t\tERROR', e)
         if len(linje) > 10:
-            wattimerGjennomsnitt = regn_gjennomsnitt(wattimer)
-            prosentGjennomsnitt = regn_gjennomsnitt(prosenter)
-            totaleWattimer.append(wattimerGjennomsnitt)
-            totaleProsenter.append(prosentGjennomsnitt)
+            watt_snitt = regn_gjennomsnitt(wattimer)
+            prosent_snitt = regn_gjennomsnitt(prosenter)
+            totaleWattimer.append(watt_snitt)
+            totaleProsenter.append(prosent_snitt)
             enhetsData.append(
-                f"Snitt: {wattimerGjennomsnitt:#.2f}"
-                f" Wh + {prosentGjennomsnitt:#.2f}%"
+                f"Snitt: {watt_snitt:#.2f} Wh + {prosent_snitt:#.2f}%"
             )
             # Alltid tøm globale lister før man kaller regn_ut() på en ny linje
             wattimer.clear()
             prosenter.clear()
         ferdigData.append('\n'.join(enhetsData))
 
-    totale_watt_timer_snitt = regn_gjennomsnitt(totaleWattimer)
-    totale_prosenter_snitt = regn_gjennomsnitt(totaleProsenter)
+    totale_w_snitt = regn_gjennomsnitt(totaleWattimer)
+    totale_p_snitt = regn_gjennomsnitt(totaleProsenter)
     ferdigData.append(
-        "\n\n* - - - - - - - - - - - - - - - - - - - - *\n\n"
-        f"Snitt for alle laderne totalt: {totale_watt_timer_snitt:#.2f}"
-        f" Wh + {totale_prosenter_snitt:#.2f}%\n"
+        '\n\n* - - - - - - - - - - - - - - - - - - - - *\n\n'
+        f"Snitt for alle laderne totalt: {totale_w_snitt:#.2f} Wh + {totale_p_snitt:#.2f}%"
+        '\n'
     )
     return ferdigData
 
 
 def velg_filnavn() -> str:
     filnavn = input(
-        "\n\tHva oensker du at den ferdig prosesserte filen skal hete? "
+        '\n\tHva oensker du at den ferdig prosesserte filen skal hete? '
     )
     filtype = os.path.splitext(filnavn)[1]
     if filtype == '':
@@ -123,12 +121,12 @@ if __name__ == '__main__':
     output_fil = Path(velg_filnavn()).resolve()
     while output_fil.is_file():
         print(f"\n\t'{output_fil.absolute()}' eksisterer.")
-        svar = input("\tOverskrive filen? j[a]/y[es]/Nei]: ")
+        svar = input('\tOverskrive filen? j[a]/y[es]/Nei]: ')
         if svar.lower().startswith('j') or svar.lower().startswith('y'):
             break
         output_fil = velg_filnavn()
 
-    print("\n\n\tJobber med dataene...")
+    print('\n\n\tJobber med dataene...')
     innleste_data = "\n".join(
         les_data(
             input_fil=velg_fil()  # Filen med data å lese

@@ -28,18 +28,18 @@ def regn_ut(
 
 
 def fjern_stjerner(linje):
-    plasseringer_av_stjerner = [
-        m.start()
+    første_stjerne, *plasseringer_av_stjerner = [
+        m.start()   # Indeks i 'linje' for hver stjerne funnet
         for m in re.finditer(r'\*', linje)
     ]
 
     # Ta med alt frem til, men ikke med første '*'
-    nyLinje = linje[:plasseringer_av_stjerner[0]]
+    ny_linje = linje[:første_stjerne]
 
-    if len(plasseringer_av_stjerner) >= 3:
+    if len(plasseringer_av_stjerner) >= 2:
         # Ta med alt etter tredje '*' om den finnes
-        nyLinje += linje[plasseringer_av_stjerner[2] + 1:]
-    return nyLinje
+        ny_linje += linje[plasseringer_av_stjerner[1] + 1:]
+    return ny_linje
 
 
 def regn_gjennomsnitt(liste: List[Union[NUMBER]]) -> float:

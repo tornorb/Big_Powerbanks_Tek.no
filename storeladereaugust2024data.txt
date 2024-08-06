@@ -1,0 +1,18 @@
+Deltaco PB-C1008: * 74 * 3.7 * 12716 + 12863 + 12764
+
+Deltaco PB-C1006: * 74 * 3.7 * 12961 + 12789 + 12853
+
+Andersson PB/QC 3.0 V2: * 74 * 3.7 * 14517 + 14677 + 14613
+
+Clas Ohlson Powerbank 20000: * 74 * 3.7 * 13376 + 13475 + 13412
+
+Clas Ohlson Powerbank 26800: * 96.48 * 3.6 * 15335 + 15467 + 15347
+
+Aqiila Powerbird B20+ Powerbank: * 74 * 3.7 * 13841 + 14032 + 13987
+
+Belkin BoostCharge Powerbank BPB012: * 74 * 3.7 * 13280 + 13370 + 13432
+
+GP Batteries M20C 20000: * 74 * 3.7 * 14130 + 14201 + 14176
+
+Xtorm FS5201 Powerbank 35W 20000: * 74 * 3.7 * 14409 + 14427 + 14373
+

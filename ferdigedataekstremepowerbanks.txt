@@ -1,0 +1,51 @@
+
+Andersson PRB Traveler PD 222W:  14240 + 14320 + 14290
+Hevdet Wh: 99.9 Wh
+Runde 1 målt: 52.69 Wh. Prosentandel: 52.74%
+Runde 2 målt: 52.98 Wh. Prosentandel: 53.04%
+Runde 3 målt: 52.87 Wh. Prosentandel: 52.93%
+Snitt: 52.85 Wh + 52.90%
+
+
+Xtorm FS5271 Powerbank 67W 27000:  21411 + 21473 + 21395
+Hevdet Wh: 99.9 Wh
+Runde 1 målt: 79.22 Wh. Prosentandel: 79.3%
+Runde 2 målt: 79.45 Wh. Prosentandel: 79.53%
+Runde 3 målt: 79.16 Wh. Prosentandel: 79.24%
+Snitt: 79.28 Wh + 79.36%
+
+
+Sandberg 420-95 Travel Powerbank PD65W:  13319 + 13475 + 13428
+Hevdet Wh: 77 Wh
+Runde 1 målt: 51.28 Wh. Prosentandel: 66.6%
+Runde 2 målt: 51.88 Wh. Prosentandel: 67.38%
+Runde 3 målt: 51.7 Wh. Prosentandel: 67.14%
+Snitt: 51.62 Wh + 67.04%
+
+
+Linocell Premium Powerbank 100W:  15253 + 15317 + 15328
+Hevdet Wh: 92.16 Wh
+Runde 1 målt: 54.91 Wh. Prosentandel: 59.58%
+Runde 2 målt: 55.14 Wh. Prosentandel: 59.83%
+Runde 3 målt: 55.18 Wh. Prosentandel: 59.88%
+Snitt: 55.08 Wh + 59.76%
+
+
+Linocell Powerbank 65W PD 20.000 mAH:  11770 + 11830 + 11816
+Hevdet Wh: 74 Wh
+Runde 1 målt: 43.55 Wh. Prosentandel: 58.85%
+Runde 2 målt: 43.77 Wh. Prosentandel: 59.15%
+Runde 3 målt: 43.72 Wh. Prosentandel: 59.08%
+Snitt: 43.68 Wh + 59.03%
+
+
+Anker Prime Power Bank 200W 20000:  9858 + 9874 + 9913Hevdet Wh: 72 Wh
+Runde 1 målt: 35.49 Wh. Prosentandel: 49.29%
+Runde 2 målt: 35.55 Wh. Prosentandel: 49.37%
+Runde 3 målt: 35.69 Wh. Prosentandel: 49.57%
+Snitt: 35.57 Wh + 49.41%
+
+
+ * - - - - - - - - - - - - - - - - - - - - *
+
+Snitt for alle laderne totalt: 53.01 Wh + 61.25%

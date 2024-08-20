@@ -1,0 +1,23 @@
+Deltaco PB-C1010 Transparent Power Bank: * 37 * 3.7 * 6173 + 6254 + 6218
+
+Xtorm XG2102 Power Bank 10000: * 37 * 3.7 * 7030 + 7054 + 7061
+
+Xtorm FS5103 20W 10000: * 37 * 3.7 * 7077 + 7094 + 7105
+
+Clas Ohlson Powerbank 6700: * 24.12 * 3.6 * 3870 + 3864 + 3861
+
+GP Batteries M10C 10000: * 37 * 3.7 * 6839 + 6874 + 6851
+
+Aqiila Powerbird B10 Powerbank: * 37 * 3.7 * 7006 + 7021 + 7052
+
+Andersson Powerbank 10.000 PD/QC 3.0: * 37 * 3.7 * 5850 + 5956 + 5921
+
+Xtorm XG2050 Power Bank Go2: * 18.5 * 3.7 * 3020 + 3037 + 3041
+
+Belkin Boost Charge BPB011: * 37 * 3.7 * 6627 + 6684 + 6674
+
+Belkin Boost Charge Plus BPB006: * 37 * 3.7 * 6700 + 6692 + 6704
+
+Biltema Powerbank, 10 000: * 37 * 3.7 * 7264 + 7270 + 7252
+
+Biltema Powerbank, 5000: * 18.5 * 3.7 * 3370 + 3385 + 3367

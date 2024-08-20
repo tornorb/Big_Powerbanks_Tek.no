@@ -1,0 +1,13 @@
+Sandberg 420-94 Mag Wireless 10000: * 38.5 * 3.85 * 6935 + 6956 + 6964
+
+Deltaco PB-Q1003 Wireless Power Bank: * 37 * 3.7 * 7153 + 7174 + 7167
+
+Andersson PRB-M2500: * 19.25 * 3.85 * 3365 + 3378 + 3384
+
+Sandberg 420-61 Wireless Powerbank: * 37 * 3.7 * 6650 + 6678 + 6673
+
+GP Batteries Q05B 5000 Wireless Powerbank: * 18.5 * 3.7 * 3260 + 3289 + 3301
+
+Linocell Magnetic Powerbank 20W PD: * 38.5 * 3.85 * 6769 + 6813 + 6804
+
+Anker MagGo Power Bank 10k: * 38.5 * 3.85 * 6510 + 6570 + 6534

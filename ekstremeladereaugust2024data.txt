@@ -1,0 +1,11 @@
+Andersson PRB Traveler PD 222W: * 99.9 * 3.7 * 14240 + 14320 + 14290
+
+Xtorm FS5271 Powerbank 67W 27000: * 99.9 * 3.7 * 21411 + 21473 + 21395
+
+Sandberg 420-95 Travel Powerbank PD65W: * 77 * 3.85 * 13319 + 13475 + 13428
+
+Linocell Premium Powerbank 100W: * 92.16 * 3.6 * 15253 + 15317 + 15328
+
+Linocell Powerbank 65W PD 20.000 mAH: * 74 * 3.7 * 11770 + 11830 + 11816
+
+Anker Prime Power Bank 200W 20000: * 72 * 3.6 * 9858 + 9874 + 9913

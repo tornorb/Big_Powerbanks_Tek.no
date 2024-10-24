@@ -1,0 +1,99 @@
+
+Sandberg 420-94 Mag Wireless 10000:  6935 + 6956 + 6964
+Hevdet Wh: 38.5 Wh
+Runde 1 målt: 26.7 Wh. Prosentandel: 69.35%
+Runde 2 målt: 26.78 Wh. Prosentandel: 69.56%
+Runde 3 målt: 26.81 Wh. Prosentandel: 69.64%
+Snitt: 26.76 Wh + 69.52%
+
+
+Deltaco PB-Q1003 Wireless Power Bank:  7153 + 7174 + 7167
+Hevdet Wh: 37 Wh
+Runde 1 målt: 26.47 Wh. Prosentandel: 71.53%
+Runde 2 målt: 26.54 Wh. Prosentandel: 71.74%
+Runde 3 målt: 26.52 Wh. Prosentandel: 71.67%
+Snitt: 26.51 Wh + 71.65%
+
+
+Andersson PRB-M2500:  3365 + 3378 + 3384
+Hevdet Wh: 19.25 Wh
+Runde 1 målt: 12.96 Wh. Prosentandel: 67.3%
+Runde 2 målt: 13.01 Wh. Prosentandel: 67.56%
+Runde 3 målt: 13.03 Wh. Prosentandel: 67.68%
+Snitt: 13.00 Wh + 67.51%
+
+
+Sandberg 420-61 Wireless Powerbank:  6650 + 6678 + 6673
+Hevdet Wh: 37 Wh
+Runde 1 målt: 24.61 Wh. Prosentandel: 66.5%
+Runde 2 målt: 24.71 Wh. Prosentandel: 66.78%
+Runde 3 målt: 24.69 Wh. Prosentandel: 66.73%
+Snitt: 24.67 Wh + 66.67%
+
+
+GP Batteries Q05B 5000 Wireless Powerbank:  3260 + 3289 + 3301
+Hevdet Wh: 18.5 Wh
+Runde 1 målt: 12.06 Wh. Prosentandel: 65.2%
+Runde 2 målt: 12.17 Wh. Prosentandel: 65.78%
+Runde 3 målt: 12.21 Wh. Prosentandel: 66.02%
+Snitt: 12.15 Wh + 65.67%
+
+
+Linocell Magnetic Powerbank 20W PD:  6769 + 6813 + 6804
+Hevdet Wh: 38.5 Wh
+Runde 1 målt: 26.06 Wh. Prosentandel: 67.69%
+Runde 2 målt: 26.23 Wh. Prosentandel: 68.13%
+Runde 3 målt: 26.2 Wh. Prosentandel: 68.04%
+Snitt: 26.16 Wh + 67.95%
+
+
+Anker MagGo Power Bank 10k:  6510 + 6570 + 6534
+Hevdet Wh: 38.5 Wh
+Runde 1 målt: 25.06 Wh. Prosentandel: 65.1%
+Runde 2 målt: 25.29 Wh. Prosentandel: 65.7%
+Runde 3 målt: 25.16 Wh. Prosentandel: 65.34%
+Snitt: 25.17 Wh + 65.38%
+
+
+Xtorm FS5W101:  6575 + 6603 + 6618
+Hevdet Wh: 38.5 Wh
+Runde 1 målt: 25.31 Wh. Prosentandel: 65.75%
+Runde 2 målt: 25.42 Wh. Prosentandel: 66.03%
+Runde 3 målt: 25.48 Wh. Prosentandel: 66.18%
+Snitt: 25.40 Wh + 65.99%
+
+
+Mophie Powerstation 10k stand with MagSafe:  6880 + 6917 + 6908
+Hevdet Wh: 37 Wh
+Runde 1 målt: 25.46 Wh. Prosentandel: 68.8%
+Runde 2 målt: 25.59 Wh. Prosentandel: 69.17%
+Runde 3 målt: 25.56 Wh. Prosentandel: 69.08%
+Snitt: 25.54 Wh + 69.02%
+
+
+Linocell Magnetic Powerbank 12W:  3384 + 3397 + 3392
+Hevdet Wh: 19.25 Wh
+Runde 1 målt: 13.03 Wh. Prosentandel: 67.68%
+Runde 2 målt: 13.08 Wh. Prosentandel: 67.94%
+Runde 3 målt: 13.06 Wh. Prosentandel: 67.84%
+Snitt: 13.06 Wh + 67.82%
+
+
+Hama MagPower 5:  3450 + 3473 + 3452
+Hevdet Wh: 18.5 Wh
+Runde 1 målt: 12.77 Wh. Prosentandel: 69.0%
+Runde 2 målt: 12.85 Wh. Prosentandel: 69.46%
+Runde 3 målt: 12.77 Wh. Prosentandel: 69.04%
+Snitt: 12.80 Wh + 69.17%
+
+
+Sandberg Mag Wireless Powerbank 490-97:  7156 + 7187 + 7193Hevdet Wh: 38.5 Wh
+Runde 1 målt: 27.55 Wh. Prosentandel: 71.56%
+Runde 2 målt: 27.67 Wh. Prosentandel: 71.87%
+Runde 3 målt: 27.69 Wh. Prosentandel: 71.93%
+Snitt: 27.64 Wh + 71.79%
+
+
+ * - - - - - - - - - - - - - - - - - - - - *
+
+Snitt for alle laderne totalt: 21.57 Wh + 68.18%
